@@ -99,40 +99,67 @@ textarea {
 html {
   background-color: #fff;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: 0em 2em;
   font-size: 1.25em;
   height: 100%;
   background: #ffffff;
+  display: flex;
+  justify-content: center;
 }
+
+
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
-  font-weight: 700;
+  flex-flow: row wrap;
+  max-width: 1200px;
 }
+header h1 {
+    /* change for my own font */
+    font-family: 'Lora', sans-serif;
+    font-size: 3em;
+    color: #ff9f1c;
 
-.div-1, .div-2, .div-3 {
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  main p {
+    font-size: 1.35em;
+    color: #ffbf67;
+  }
+
+.div-flex{
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #ff9f1c;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  height: 300px;
-  width: 30%;
+  line-height: 1.4em;
+  font-size: 0.9em;
+  height: 140px;
+  width: 32%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-right: 1px solid #ffbf69;
   border-left: 1px solid #ffbf69;
 
+    }
+
+
+div p {
+    margin: 2em;
 }
-
-
-
 
 /* ==========================================================================
    Helper classes
